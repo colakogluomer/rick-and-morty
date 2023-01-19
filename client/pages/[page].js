@@ -1,4 +1,3 @@
-import { GetStaticPaths, GetStaticProps } from "next";
 import React from "react";
 import Characters from "../components/Characters";
 import { GetAllCharacters } from "../apollo-client";

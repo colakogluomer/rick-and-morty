@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import * as stringConstants from "../constants/strings";
+
 const CharacterDetail = ({ character }) => {
-  const [isLoadMore, setIsLoadMore] = useState(false);
   return (
     <div className="bg-white">
       <div className="mx-auto grid max-w-xl grid-cols-1 items-center gap-y-16 gap-x-4 py-8 px-4 sm:px-6 sm:py-16 lg:max-w-7xl  lg:px-8">

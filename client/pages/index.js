@@ -1,11 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import { gql, useQuery } from "@apollo/client";
-import React, { useState } from "react";
-import { Router } from "next/router";
-import client from "../apollo-client";
+import React from "react";
 import Characters from "@/components/Characters";
 import { GetAllCharacters } from "../apollo-client";
 

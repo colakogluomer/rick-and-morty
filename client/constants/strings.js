@@ -8,3 +8,4 @@ export const ORIGIN = "Origin";
 export const CHARACTER_DETAILS = "Character Details";
 export const DUMMY_DESCRIPTION =
   "You can find all the details about this character here.";
+export const CHARACTERS = "Characters";
