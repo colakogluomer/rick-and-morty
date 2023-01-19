@@ -66,7 +66,7 @@ const CharacterDetail = ({ character }) => {
                 <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
                   {character?.episode.map((episode) => (
                     <li key={episode?.name} className="text-gray-900">
-                      <span className="text-gray-600">{episode?.name}</span>
+                      <span className="text-gray-900">{episode?.name}</span>
                     </li>
                   ))}
                 </dd>
