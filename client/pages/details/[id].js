@@ -8,8 +8,8 @@ const Character = ({ character }) => {
 
 export default Character;
 
-export async function getServerSideProps(context) {
-  const { data } = await GetCharacterById(context);
+export async function getServerSideProps({ params }) {
+  const { data } = await GetCharacterById(params.id);
   if (!data.character) {
     return {
       notFound: true,

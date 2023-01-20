@@ -13,7 +13,7 @@ export default function Home({ characters, totalPages }) {
   );
 }
 
-export async function getStaticProps(params) {
+export async function getStaticProps({ params }) {
   const page = Number(params?.page) || 1;
   const { data } = await GetAllCharacters(page);
   return {

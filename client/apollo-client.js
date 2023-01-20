@@ -27,7 +27,7 @@ async function GetAllCharacters(page) {
   return data;
 }
 
-async function GetCharacterById(context) {
+async function GetCharacterById(characterId) {
   const data = await client.query({
     query: gql`
       query getCharacter($characterId: ID!) {
@@ -49,7 +49,7 @@ async function GetCharacterById(context) {
         }
       }
     `,
-    variables: { characterId: context.params.id },
+    variables: { characterId: characterId },
   });
   return data;
 }
