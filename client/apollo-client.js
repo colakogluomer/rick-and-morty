@@ -11,10 +11,7 @@ async function GetAllCharacters(page) {
       query GetAllCharacters($page: Int!) {
         characters(page: $page) {
           info {
-            count
             pages
-            next
-            prev
           }
           results {
             id

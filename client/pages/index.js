@@ -3,12 +3,12 @@ import Characters from "@/components/Characters";
 import { GetAllCharacters } from "../apollo-client";
 
 const indexPage = 1;
-export default function Home({ characters, page }) {
+export default function Home({ characters, totalPages }) {
   return (
     <Characters
       characters={characters}
       currentPage={indexPage}
-      totalPages={page}
+      totalPages={totalPages}
     />
   );
 }
@@ -19,7 +19,7 @@ export async function getStaticProps(params) {
   return {
     props: {
       characters: data.characters.results,
-      page: data.characters.info.pages,
+      totalPages: data.characters.info.pages,
     },
   };
 }
